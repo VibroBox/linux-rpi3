@@ -1,0 +1,34 @@
+// Definitions for RPi PCM1803
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2708";
+
+	fragment@0 {
+		target = <&i2s>;
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@1 {
+		target = <&soc>;
+		__overlay__ {
+			pcm1803-codec {
+				#sound-dai-cells = <0>;
+				compatible = "ti,pcm1803";
+				status = "okay";
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <&sound>;
+		__overlay__ {
+			compatible = "rpi,rpi-pcm1803";
+			i2s-controller = <&i2s>;
+			status = "okay";
+		};
+	};
+};

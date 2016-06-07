@@ -43,6 +43,13 @@ config SND_BCM2708_SOC_RPI_DAC
         help
          Say Y or M if you want to add support for RPi-DAC.
 
+config SND_BCM2708_SOC_RPI_PCM1803
+        tristate "Support for RPi-PCM1803"
+        depends on SND_BCM2708_SOC_I2S || SND_BCM2835_SOC_I2S
+        select SND_SOC_PCM1803
+        help
+         Say Y or M if you want to add support for RPi-PCM1803
+
 config SND_BCM2708_SOC_RPI_PROTO
 	tristate "Support for Rpi-PROTO"
 	depends on SND_BCM2708_SOC_I2S || SND_BCM2835_SOC_I2S
