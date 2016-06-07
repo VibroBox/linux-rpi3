@@ -801,6 +801,11 @@ Info:   Configures the RPi DAC audio card
 Load:   dtoverlay=rpi-dac
 Params: <None>
 
+Name:   rpi-pcm1803
+Info:   Configures the RPi ADC PCM1803
+Load:   dtoverlay=rpi-pcm1803
+Params: <None>
+
 
 Name:   rpi-display
 Info:   RPi-Display - 2.8" Touch Display by Watterott

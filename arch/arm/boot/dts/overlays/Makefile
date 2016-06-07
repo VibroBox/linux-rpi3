@@ -63,6 +63,7 @@ dtbo-$(RPI_DT_OVERLAYS) += qca7000.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += raspidac3.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += rpi-backlight.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += rpi-dac.dtbo
+dtbo-$(RPI_DT_OVERLAYS) += rpi-pcm1803.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += rpi-display.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += rpi-ft5406.dtbo
 dtbo-$(RPI_DT_OVERLAYS) += rpi-proto.dtbo
