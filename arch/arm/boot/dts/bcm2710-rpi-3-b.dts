@@ -159,6 +159,21 @@
 		linux,default-trigger = "mmc0";
 		gpios = <&virtgpio 0 0>;
 	};
+	status_led {
+		label = "led1";
+		linux,default-trigger = "timer";
+		gpios = <&gpio 27 0>;
+	};
+	red_led {
+		label = "bicolor1";
+		linux,default-trigger = "none";
+		gpios = <&gpio 25 0>;
+	};
+	green_led {
+		label = "bicolor2";
+		linux,default-trigger = "none";
+		gpios = <&gpio 12 0>;
+	};
 };
 
 &hdmi {
